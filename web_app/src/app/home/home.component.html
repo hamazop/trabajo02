@@ -1,0 +1,149 @@
+<h1>Calcular Riesgo Crediticio</h1>
+
+<form [formGroup]="scoreForm" (ngSubmit)="calculate()">
+    <label>Cantidad del crédito </label>
+    <input type="number" name="loan_amnt" formControlName="loan_amnt" required>
+
+    <br><br>
+
+    <label>Cuotas (en meses) </label>
+    <input type="number" name="term" formControlName="term" required>
+
+    <br><br>
+
+    <label>Tasa de interés </label>
+    <input type="number" name="int_rate" formControlName="int_rate" required>
+
+    <br><br>
+
+    <label>Pago </label>
+    <input type="number" name="installment" formControlName="installment" required>
+
+    <br><br>
+
+    <label>Calificación </label>
+    <select name="grade" formControlName="grade" required>
+        <option value="A">A</option>
+        <option value="B">B</option>
+        <option value="C">C</option>
+        <option value="D">D</option>
+        <option value="E">E</option>
+        <option value="F">F</option>
+        <option value="G">G</option>
+    </select>
+
+    <br><br>
+
+    <label>Subalificación </label>
+    <select name="sub" formControlName="sub" required>
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+    </select>
+
+    <br><br>
+
+    <label>Situación sobre vivienda </label>
+    <select name="home_ownership" formControlName="home_ownership" required>
+        <option value="MORTAGE">En hipoteca</option>
+        <option value="OWN">Posee vivienda propia</option>
+        <option value="other">Otra</option>
+    </select>
+
+    <br><br>
+
+    <label>Ingreso Anual </label>
+    <input type="number" name="annual_inc" formControlName="annual_inc" required>
+
+    <br><br>
+
+    <label>Motivo de la solicitud </label>
+    <select name="purpose" formControlName="purpose" required>
+        <option value="debt_consolidation" selected>Consolidación de deudas</option>
+        <option value="credit_card">Tarjeta de Crédito</option>
+        <option value="home_improvement">Mejora de vivienda</option>
+        <option value="other">Otra</option>
+        <option value="major_purchase">Gran compra</option>
+        <option value="small_business">Negocio pequeño</option>
+        <option value="car">Auto</option>
+        <option value="medical">Médica</option>
+        <option value="moving">Mudanza</option>
+        <option value="vacation">Vacaciones</option>
+        <option value="house">Vivienda</option>
+        <option value="wedding">Boda</option>
+        <option value="renewable_energy">Emergía Renovable</option>
+        <option value="educational">Educación</option>
+    </select>
+
+    <br><br>
+
+    <label>DTI </label>
+    <input type="number" name="dti" formControlName="dti" required>
+
+    <br><br>
+
+    <label>Infracciones en los últimos dos años </label>
+    <input type="number" name="delinq_2yrs" formControlName="delinq_2yrs" required>
+
+    <br><br>
+
+    <label>Consultas en los últimos 6 meses </label>
+    <input type="number" name="inq_last_6mths" formControlName="inq_last_6mths" required>
+
+    <br><br>
+
+    <label>Número de créditos activos por la persona </label>
+    <input type="number" name="open_acc" formControlName="open_acc" required>
+
+    <br><br>
+
+    <label>Reportes públicos </label>
+    <input type="number" name="pub_rec" formControlName="pub_rec" required>
+
+    <br><br>
+
+    <label>Saldo </label>
+    <input type="number" name="revol_bal" formControlName="revol_bal" required>
+
+    <br><br>
+
+    <label>Número de créditos totales a nombre de la persona </label>
+    <input type="number" name="total_acc" formControlName="total_acc" required>
+
+    <br><br>
+
+    <label>Monto del último pago </label>
+    <input type="number" name="last_pymnt_amnt" formControlName="last_pymnt_amnt" required>
+
+    <br><br>
+
+    <label>Código de política </label>
+    <select name="policy_code" formControlName="policy_code" required>
+        <option value="1">1 Públicamente disponible</option>
+        <option value="2">2 No públicamente disponible</option>
+    </select>
+
+    <br><br>
+
+    <label>Tipo de solicitud </label>
+    <select name="application_type" formControlName="application_type" required>
+        <option value="0">Individual</option>
+        <option value="1">En conjunto</option>
+    </select>
+
+    <br><br>
+
+    <label>Número de cuentas en las que quien solicita el crédito es infractor </label>
+    <input type="number" name="acc_now_delinq" formControlName="acc_now_delinq" required>
+
+    <br><br>
+
+    <label>Crédito más antiguo </label>
+    <input type="date" name="rlst_cr" formControlName="rlst_cr" required>
+
+    <br><br>
+
+    <input type="submit" value="Calcular">
+</form>
