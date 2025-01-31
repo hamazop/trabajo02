@@ -1,3 +1,7 @@
-Get started by customizing your environment (defined in the .idx/dev.nix file) with the tools and IDE extensions you'll need for your project!
+# Reporte Técnico - Trabajo 02
 
-Learn more at https://developers.google.com/idx/guides/customize-idx-env
+Autores:
+
+- Hugo Andrés Mazo Pacheco - hamazop@unal.edu.co
+- Julián Orrego Martínez - jorrego@unal.edu.co
+
