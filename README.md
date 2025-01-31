@@ -1,4 +1,4 @@
-# Reporte Técnico - Trabajo 02
+Trabajo 02 - Redes Neuronales
 
 Autores:
 
