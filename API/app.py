@@ -7,11 +7,14 @@ from sklearn.preprocessing import StandardScaler
 
 # We are using Flask as our backend API
 from flask import Flask, jsonify, request
+from flask_cors import CORS
 
 # We need to process the recieve data
 from utilities import process_data
 
 app = Flask(__name__)
+
+CORS(app)
 
 # Temporal variable to store the user score
 prediction = 0
